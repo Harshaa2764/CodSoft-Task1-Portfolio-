@@ -1,0 +1,161 @@
+/* General Styles */
+body {
+  font-family: Times New Roman, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1, h2 {
+  margin-bottom: 1em;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+/* Header Section */
+.header {
+  background: #333;
+  color: #fff;
+  padding: 2em 0;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 3em;
+}
+
+.tagline {
+  font-size: 1.2em;
+  margin-top: 0.5em;
+}
+
+/* About Section */
+.about-section {
+  padding: 1em 0;
+  background: #ddd;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.profile-pic {
+  max-width: 150px;
+  border-radius: 50%;
+}
+
+/* Skills Section */
+.skills-section {
+  padding: 3em 0;
+}
+
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+}
+
+.skills-list li {
+  background: #ddd;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+}
+
+/* Projects Section */
+.projects-section {
+  padding: 3em 0;
+  background: #ddd;
+}
+
+.project {
+  margin-bottom: 2em;
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Resume Section */
+.resume-section {
+  text-align:center;
+}
+
+.btn {
+  display:inline-block;
+  padding:15px 30px;
+  background: #007bff;
+  color:white;
+  text-decoration:none;
+  font-size: 20px;
+  font-weight:bold;
+  border-radius:50px;
+  position:relative;
+  overflow:hidden;
+  transition:background 0.3s ease,transform 0.3s ease;
+}
+
+.btn:hover {
+  background: #0056b3;
+  transform:scale(1.1);
+}
+.btn::before {
+            
+            position: absolute;
+            left: 10px;
+            font-size: 24px;
+            transform: scale(0);
+            opacity: 0;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+.btn:hover::before {
+            transform: scale(1);
+            opacity: 1;
+        }
+.btn::after {
+            
+            position: absolute;
+            right: 10px;
+            font-size: 24px;
+            transform: translateX(-10px);
+            opacity: 0;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+.btn:hover::after {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+
+/* Contact Section */
+.contact-section {
+  padding: 3em 0;
+  background: #ddd;
+}
+
+
+/* Footer */
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 1em 0;
+}
+/* LinkedIn logo*/
+.linkedin{
+	width:30px;
+	height:30px;
+}
